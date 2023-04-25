@@ -11,23 +11,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
-
-
-
-    <!-- підключення шрифтів -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <!-- ресет CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- CSS --> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/modal.css">
     <link rel="stylesheet" href="style/carusel.css">
     
 </head>
 
 <body>
+
 
     <header>
         <section class="header">
@@ -36,7 +34,10 @@
                     <img  class = "logo_img" src="./images/header/logo.png" alt="logo">
                      <h6 class="logo_title"> Landguru </h6>
 
-                     <nav class="menu flex">
+<div class="burger_menu"> 
+   
+                 <div class="menu-all"> 
+                    <nav class="menu flex">
                         <ul class="menu_list">
                             <li class="menu-list">
                                 <a href="" class="menu_link"> Home </a>
@@ -80,9 +81,71 @@
                                 <a href="" class="menu_link"> Contacts </a>
                             </li>
                         </ul>
-                            <button class="button_menu"> Get Started </button>
+                        <button id= "open-modal" class="button_menu">Get Started</button>
                     </nav>
                 </div>
+                </div>
+</div>
+
+<header>
+     
+<div class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+</header>
+
+<div class="menu">
+    <nav>
+        <li class="menu-list">
+            <a href="" class="menu_link"> Home </a>
+        </li>
+        <li class= "menu-list">
+            <a href="" class="menu_link"> Adversite </a>
+            <span class="arrow">  </span>
+            
+                 <ul class="sub_menu_list"> 
+                    <li class="sub_menu-list"> 
+                    <a href="" class="sub_menu_link"> Quality features </a>
+                    </li>
+                    <li class="sub_menu-list"> 
+                    <a href="" class="sub_menu_link"> Core features </a>
+                    </li>
+                    <li class="sub_menu-list"> 
+                    <a href="" class="sub_menu_link"> The functions </a>
+                    </li>
+                    <li class="sub_menu-list"> 
+                        <a href="" class="sub_menu_link"> Testimunial </a>
+                    </li>
+                </ul>
+        </li>
+        <li class= "menu-list">
+            <a href="" class="menu_link"> Supports  </a>
+            <span class="arrow menu_arrow">  </span>
+            
+                 <ul class="sub_menu_list"> 
+                    <li class="sub_menu-list"> 
+                    <a href="" class="sub_menu_link"> Frequent question </a>
+                    </li>
+                    <li class="sub_menu-list"> 
+                    <a href="" class="sub_menu_link"> Plans </a>
+                    </li>
+                    <li class="sub_menu-list"> 
+                    <a href="" class="sub_menu_link"> The functions </a>
+                    </li>
+                </ul>
+        </li>
+        <li class= "menu-list">
+            <a href="" class="menu_link"> Contacts </a>
+        </li>
+
+    </nav>
+</div>
+
+
+
 
 
                 <div class="flex">
@@ -90,11 +153,10 @@
                         <h1 class="header_title"> Experience your ultimate  mobile application </h1>
                         <p class="header_text"> Get your blood tests delivered at let home collect sample from the victory of the managments that supplies best
                     design system guidelines ever.</p>
-                        <button class="button_header"> Get Started </button>
-
+                        <button id ="open-modal-1" class="button_header"> Get Started </button>
                            <img src="./images/header/play_icon.png" alt="play icon"> 
-                           <a  href="" class="watch_video"> Watch Video </a>
-                    
+                           <a  href="https://youtu.be/riCvgQTBUmo" class="watch_video"> Watch Video </a>
+                       
                         <div class=" flex sponsors">
                             <h6 class = "sponsored_text"> Sponsored by:</h6>
                             
@@ -133,6 +195,7 @@
                 </div>
             </div>
         </section>
+
 
         <section class="core_features container">
             <div class="flex"> 
@@ -232,7 +295,7 @@
         <h2 class="smart_features_title"> Smart Jackpots  that you may love this anytime & anywhere</h2>
         <p class="smart_features_text"> Get your tests delivered at let home collect sample from the victory of the managments that 
             supplies best design system guidelines ever. Get your tests delivered at let home collect sample.</p>
-        <button class="smart_features_button"> Get Started </button>
+        <button id="open-modal-2" class="smart_features_button"> Get Started </button>
     </div>
         <img class= "smart_features_img" src="./images/smart_features/smart.png" alt="smart features">
      </div>
@@ -249,7 +312,7 @@
                 <div class="how_it_works_card"> 
                     <div class="flex"> 
                         <img class= "" src="./images/how_it_works/item1.png" alt="icon">
-                        <img class= "" src="./images/how_it_works/arrow.png" alt="">
+                        <img class= "" src="./images/how_it_works/arrow.png" alt="icon">
                     </div>
                     <div> 
                         <h5 class="how_it_works_cards__title"> Set disbursement Instructions </h5>
@@ -292,14 +355,15 @@
 </section>
 
 
+
+
+
 <section class="clients">
     <div class="container"> 
         <h6 class="info_pretitle clients_pretitle"> Testimunial </h6>
         <h3 class="quality_features_title"> Meet Client Satisfaction</h3>
 
-    
-        <div class="clients_cards flex">
-            
+         <div class="carusel">
             <div class="client_card"> 
                 <img class = "client_card_img" src="./images/clients/clients_icon.png" alt="stars">
                 <p class="client_card_title"> Modern look & trending design</p>
@@ -314,29 +378,27 @@
                             </div>  
                     </div>
             </div>
-                
+            
 
-            <div class="client_card"> 
-                <img class = "client_card_img" src="./images/clients/clients_icon.png" alt="stars">
-                <p class="client_card_title"> Design Quality & performance</p>
-                <p class="client_card_response"> Get working experience to work with this amazing team & 
-                    in future want to work together for bright future projects and also make deposit 
-                    to freelancer.</p>
-                    <div class=" flex "> 
-                        <img class="clients_photo" src="./images/clients/client2_img.png" alt= >
-                            <div> 
-                                <p class="clients_name"> Denny Hilguston</p>
-                                <p class="clients_nickname"> @denny.hil </p>
-                            </div>  
+                    <div class=""> 
+                        <img class = "client_card_img" src="./images/clients/clients_icon.png" alt="stars">
+                        <p class="client_card_title"> Design Quality & performance</p>
+                        <p class="client_card_response"> Get working experience to work with this amazing team & 
+                            in future want to work together for bright future projects and also make deposit 
+                            to freelancer.</p>
+                            <div class=" flex "> 
+                                <img class="clients_photo" src="./images/clients/client2_img.png" alt= >
+                                    <div> 
+                                        <p class="clients_name"> Denny Hilguston</p>
+                                        <p class="clients_nickname"> @denny.hil </p>
+                                    </div>  
+                            </div>
                     </div>
-            </div>
+                    
+                
+            
 
-
-
-        
-
-
-            <div class="client_card"> 
+            <div class=""> 
                 <img class = "client_card_img" src="./images/clients/clients_icon.png" alt="stars">
                 <p class="client_card_title"> Layout and organized layers </p>
                 <p class="client_card_response"> Get working experience to work with this amazing team & 
@@ -350,86 +412,18 @@
                             </div>  
                     </div>
             </div>
-                    
-                
-                 
-        
-        
-        </div>
-    
-</div>
 
 
- </section>
 
- <section> 
- <div class="slideshow-container container">
-    <div class="mySlides fade  slides_cards">
-        <div class="client_card"> 
-            <img class = "client_card_img" src="./images/clients/clients_icon.png" alt="stars">
-            <p class="client_card_title"> Modern look & trending design</p>
-            <p class="client_card_response"> Get working experience to work with this amazing team & 
-                in future want to work together for bright future projects and also make deposit 
-                to freelancer.</p>
-                <div class=" flex "> 
-                    <img class="clients_photo" src="./images/clients/client_img.png" alt= >
-                        <div> 
-                            <p class="clients_name"> Denny Hilguston</p>
-                            <p class="clients_nickname"> @denny.hil </p>
-                        </div>  
-                </div>
-        </div>
+
+         </div>
     </div>
-
-    <div class="mySlides fade">
-        <div class="client_card slides_cards"> 
-            <img class = "client_card_img" src="./images/clients/clients_icon.png" alt="stars">
-            <p class="client_card_title"> Design Quality & performance</p>
-            <p class="client_card_response"> Get working experience to work with this amazing team & 
-                in future want to work together for bright future projects and also make deposit 
-                to freelancer.</p>
-                <div class=" flex "> 
-                    <img class="clients_photo" src="./images/clients/client2_img.png" alt= >
-                        <div> 
-                            <p class="clients_name"> Denny Hilguston</p>
-                            <p class="clients_nickname"> @denny.hil </p>
-                        </div>  
-                </div>
-        </div>
-    </div>
-
-
-    <div class="mySlides fade">
-        <div class="client_card slides_cards"> 
-            <img class = "client_card_img" src="./images/clients/clients_icon.png" alt="stars">
-            <p class="client_card_title"> Layout and organized layers </p>
-            <p class="client_card_response"> Get working experience to work with this amazing team & 
-                in future want to work together for bright future projects and also make deposit 
-                to freelancer.</p>
-                <div class=" flex "> 
-                    <img class="clients_photo" src="./images/clients/client3_img.png" alt= >
-                        <div> 
-                            <p class="clients_name"> Denny Hilguston</p>
-                            <p class="clients_nickname"> @denny.hil </p>
-                        </div>  
-                </div>
-        </div>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)"> &#10094 </a>
-    <a class="next" onclick="plusSlides(1)"> &#10095 </a>
-</div>
-
-<br>
-
-<div style="text-align: center;"> 
-<span class="dot" onclick="currentSlide(1)"></span>
-<span class="dot" onclick="currentSlide(2)"></span>
-<span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
 </section>
 
+
+ 
  
 
  
@@ -446,7 +440,7 @@
                 <h2 class="section_title"> Secure Payment Transaction System with #1 Ranking</h2>
                 <p class="smart_features_text"> Get your tests delivered at let home collect sample from the victory of the managments that 
                     supplies best design system guidelines ever. Get your tests delivered at let home collect sample.</p>
-                <button class="smart_features_button"> Lern More </button>
+                <button id="open-modal_2" class="smart_features_button"> Lern More </button>
                 </div>
     </div>
 </section>
@@ -471,7 +465,7 @@
                         <li>Unlimited download of courses on the mobile app contents</li>
                         <li>Download and print courses and exercises in PDF</li>
                     </ul>
-                    <button class="signup_button"> Sign-up Now </button>
+                    <button id="open-modal-3" class="signup_button"> Sign-up Now </button>
             </div>
 
             <div class="premium_plan_card">
@@ -494,7 +488,7 @@
                         <li>Unlimited download of courses on the mobile app contents</li>
                         <li>Download and print courses and exercises in PDF</li>
                     </ul>
-                    <button class="signup_button signup_button_premium"> Sign-up Now </button>
+                    <button id="open-modal-4" class="signup_button signup_button_premium"> Sign-up Now </button>
             </div> 
     </div>
 </section>
@@ -505,23 +499,22 @@
         <h6 class="info_pretitle"> Frequent Question</h6>
             <h3 class="quality_features_title "> Do you have any question?</h3>
         </div>
-            <div class="questions">
-                <div class="question">
+           
+                <div id="myDiv" class="question">
                     <div class="flex_question"> 
-                    <img class ="question-icon" src="./images/question/question_icon.png"> 
-                    <img class ="question-rotate-icon" src="./images/question/answer_icon.png"> 
+                    <img id="myImage"  class ="question-icon" src="./images/question/question_icon.png" alt=""> 
                     <p class="question_title"> How to contact with riders emergency ? </p>
-                </div>
+                     </div>
+               
                     <p class="answer"> 
                 Get your blood tests delivered at the home collect a sample from management news. 
                 Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. 
-                Get your blood tests delivered at the home. </p>     
+                Get your blood tests delivered at the home. </p>    
                 </div>
 
-                <div class="questions">
-                    <div class="question">
-                        <div class="flex_question"> 
-                        <img class ="question-icon" src="./images/question/question_icon.png"> 
+                <div id="myDiv" class="question">
+                    <div class="flex_question"> 
+                        <img id="myImage" class ="question-icon" src="./images/question/question_icon.png"> 
                         <p class="question_title"> App installation failed, how to update system information? </p>
                     </div>
                         <p class="answer"> 
@@ -529,12 +522,12 @@
                     Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. 
                     Get your blood tests delivered at the home. </p>     
                     </div>
-
-
-                    <div class="questions">
+                
+                
+                    <div id="myDiv" class="questions">
                         <div class="question">
                             <div class="flex_question"> 
-                            <img class ="question-icon" src="./images/question/question_icon.png"> 
+                            <img id="myImage" class ="question-icon" src="./images/question/question_icon.png"> 
                             <p class="question_title"> Website reponse taking time, how to improve? </p>
                         </div>
                             <p class="answer"> 
@@ -542,12 +535,12 @@
                         Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. 
                         Get your blood tests delivered at the home. </p>     
                         </div>
-
-
-                        <div class="questions">
+                
+                
+                        <div id="myDiv" class="questions">
                             <div class="question">
                                 <div class="flex_question"> 
-                                <img class ="question-icon" src="./images/question/question_icon.png"> 
+                                <img id="myImage" class ="question-icon" src="./images/question/question_icon.png"> 
                                 <p class="question_title"> New update fixed all bug and issues </p>
                             </div>
                                 <p class="answer"> 
@@ -556,11 +549,46 @@
                             Get your blood tests delivered at the home. </p>     
                             </div>
                 </div>
-
-    </div>
-
-
+                
+                </div>
 </section>
+
+<section class="time">
+    <h6 class="how_it_works_pretitle">Whats the function </h6>
+    <h3 class="how_it_works_title"> Let’s see how it works</h3>
+   
+    <div class="timeline">
+    <div class="container_time left">
+        <div class="content">
+            <h2> 2023 </h2>
+            <p class="core_card_text"> Get your blood tests delivered at home collect a sample from theyour blood tests.</p>
+        </div>
+    </div>
+    <div class="container_time right">
+        <div class="content">
+            <h2> 2022 </h2>
+            <p class="core_card_text"> Get your blood tests delivered at home collect a sample from theyour blood tests.</p>
+        </div>
+    </div>
+    <div class="container_time left">
+        <div class="content">
+            <h2> 2021 </h2>
+            <p class="core_card_text"> Get your blood tests delivered at home collect a sample from theyour blood tests.</p>
+        </div>
+    </div>
+    <div class="container_time right">
+        <div class="content">
+            <h2> 2020 </h2>
+            <p class="core_card_text"> Get your blood tests delivered at home collect a sample from theyour blood tests.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+        
 
 <footer>
     <div class="footer_line"> </div>
@@ -611,15 +639,125 @@
 </footer>
 
 
+
+
+
+
+
+
+
+
+<div class="modal-overlay">
+    <div class="modal">
+        <h3 class="how_it_works_title"> Enter your details and we will contact you in Telegram</h3>
+        <form class ="form_trial" method="POST">
+            <div>
+                 <input class="input_free_trial" placeholder="Your name" type="text" id="name">
+                 <p id="error-name" class="error-message">
+                 </p>
+             </div> 
+             <div>
+                 <input class="input_free_trial" placeholder="Your mail" type="email" id="email">
+                 <p id="error-email" class="error-message">
+                 </p>
+             </div> 
+             <button id="telegram_bot" class="telegram_button" type="submit">
+                 Send info
+             </button>
+         </form>
+         <img class ="modal_img" src="./images/telegram.svg" alt="telegram"> 
+         <p class="close"> x </p>
+    </div>
+</div>
+
+
+<div class="modal-overlay-2">
+    <div class="modal_2">
+        <div class="exciting_features container">
+            <h6 class="info_pretitle"> Quality features</h6>
+            <h3 class="quality_features_title"> Meet exciting feature of app</h3>
+            <div class=" flex features_cards_grid">
+                
+
+                <div class=" flex "> 
+                    <img class= "features_icon" src="./images/exciting_features/icon-1.png" alt="features core icon">
+                        <div> 
+                        <h5 class="core_card_title"> Smart Features </h5>
+                        <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
+                        </div>
+                </div>
+
+                <div class=" flex "> 
+                    <img class= "features_icon" src="./images/exciting_features/icon-2.png" alt="features core icon">
+                        <div> 
+                        <h5 class="core_card_title"> Fast Performance </h5>
+                        <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
+                        </div>
+                </div>
+
+                <div class=" flex "> 
+                    <img class= "features_icon" src="./images/exciting_features/icon-4.png" alt="features core icon">
+                        <div> 
+                        <h5 class="core_card_title"> Unlimited Content </h5>
+                        <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
+                        </div>
+                </div>
+
+                <div class=" flex "> 
+                    <img class= "features_icon" src="./images/exciting_features/icon-5.png" alt="features core icon">
+                        <div> 
+                        <h5 class="core_card_title"> Ultimate Customization </h5>
+                        <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
+                        </div>
+                </div>
+
+                <div class=" flex "> 
+                    <img class= "features_icon" src="./images/exciting_features/icon-6.png" alt="features core icon">
+                        <div> 
+                        <h5 class="core_card_title"> Boost Productivity </h5>
+                        <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
+                        </div>
+                </div>
+
+                <div class=" flex "> 
+                    <img class= "features_icon" src="./images/exciting_features/icon-3.png" alt="features core icon">
+                        <div> 
+                        <h5 class="core_card_title"> Customer Support </h5>
+                        <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
+                        </div>
+                </div>
+
+            </div>
+    
+         <p class="close-2"> x </p>
+        </div>
+    </div>
+</div>
+
+
+<div id="up">
+    <span> > </span>
+</div>
+
+<div id="down">
+    <span> > </span>
+</div>
+
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" 
 integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" 
 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
+<script src="script/bxslider.js"> </script>
 
 
 <script src="script/script.js"> </script>
+<script src="script/modal.js"> </script>
+
+<script src="script/upButton.js"> </script>
 
 </body>
 </html>

@@ -1,0 +1,129 @@
+
+.free_trial{
+    background-color: #F4F5F7;
+    padding-top: 50px;
+    margin-top: 91px;
+}
+
+.input_free_trial{
+    height: 48px;
+    width: 385px;
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    border-radius: 2px;
+    padding-left: 26px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.input_free_trial::placeholder{
+    font-size: 20px;
+    line-height: 20px;
+    color: #2B292D;}
+
+.input_free_trial:focus{
+    outline: none;
+}
+
+.telegram_button{
+    width: 170px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    border-style: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    color: #2F5392;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: 0.3s;
+}
+.telegram_button:hover {
+    background: #2f8eb0;
+    box-shadow: 0 15px 20px rgba(36, 154, 217, 0.4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+.modal-overlay{
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.modal{
+    min-width: 550px;
+    text-align: center;
+    background-color: #244886;
+    background-image: url(/images/plans/plans_background.png);
+    padding: 50px 30px ;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 25px;
+}
+
+.modal_img{
+    width: 200px;
+    margin-top: 10px;
+}
+
+
+
+.modal-overlay-2{
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+   
+}
+
+.modal_2{
+    min-width: 900px;
+    max-height: 900px;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 50px 30px ;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-2{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: black;
+    font-size: 25px;
+}
+
+

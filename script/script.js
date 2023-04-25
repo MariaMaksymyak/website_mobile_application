@@ -1,31 +1,33 @@
-var slideIndex =1;
-showSlides(slideIndex);
+//FQA
 
-function plusSlides(n){
-    showSlides(slideIndex += n);
-}
+$('.question > div') .on('click', function(){
+   $(this).next('.answer').slideToggle(300)
+})
 
-function currentSlides(n) {
-    showSlides(slideIndex = n);
-}
 
-function showSlides(n){
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
 
-    if (n >slides.length) {
-        slideIndex =1
-    }
-    if (n < 1){
-        slideIndex=slides.length
-    }
-    for (i=0; i < slides.length; i++){
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++){
-        dots[i].className = dots[i].className.replace("active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className+= " active";
-}
+//icon change
+const myDiv = document.getElementById("myDiv");
+const myImage = document.getElementById("myImage");
+
+let isImage1 = true;
+
+myDiv.addEventListener("click", function() {
+  if (isImage1) {
+  myImage.src = "./images/question/answer_icon.png";
+   isImage1 = false;
+ } else {
+   myImage.src = "./images/question/question_icon.png";
+   isImage1 = true;
+  }
+});
+
+
+  
+//burger menu
+
+
+
+
+
+  
