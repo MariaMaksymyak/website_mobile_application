@@ -24,8 +24,6 @@ myDiv.addEventListener("click", function() {
 
 
   
-//burger menu
-
 
 
 
