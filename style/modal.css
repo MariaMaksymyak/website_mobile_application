@@ -63,7 +63,7 @@
 }
 
 .modal{
-    min-width: 550px;
+    min-width: 900px;
     text-align: center;
     background-color: #244886;
     background-image: url(/images/plans/plans_background.png);
@@ -104,7 +104,7 @@
 }
 
 .modal_2{
-    min-width: 900px;
+    
     max-height: 900px;
     height: 100%;
     text-align: center;
@@ -127,3 +127,21 @@
 }
 
 
+@media screen and (max-width: 480px){
+    .container{
+        max-width: 310px;
+    }
+    .modal {
+        width: 350px;
+    }
+    .input_free_trial {
+        width: 250px;
+}}
+
+@media screen and (max-width: 800px){
+    .container{
+        max-width: 500px;
+    }
+.modal_2 {
+width: 500px;
+}}

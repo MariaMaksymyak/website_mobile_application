@@ -969,6 +969,8 @@ z-index: 1;
         text-align: center;
         padding-top: 40px;
     }
+
+   
     .menu_list{
         flex-direction: column;
     }
