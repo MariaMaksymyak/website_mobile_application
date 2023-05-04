@@ -267,6 +267,7 @@ box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
     color: #0F2137;
 }
 
+
 .quality_features_title{
     font-weight: 700;
     font-size: 36px;
@@ -1066,8 +1067,8 @@ z-index: 1;
 }
 
 @media screen and (max-width: 800px){
-    .container{
-        max-width: 500px;
+    .container {
+        max-width: 500px; 
     }
     .burger_menu {
         margin-left: 300px;
@@ -1130,10 +1131,9 @@ z-index: 1;
 
 
 @media screen and (max-width: 550px){
-    .container{
-        max-width: 430px;
-    } 
-    
+    .container {
+        max-width: 430px; 
+    }
     .burger_menu{
         margin-left: 250px;
     }
@@ -1165,8 +1165,6 @@ z-index: 1;
     }
 
 }
-
-
 
 @media screen and (max-width: 480px){
     .container{
@@ -1300,4 +1298,6 @@ z-index: 1;
         max-width: 280px;
     }
 }
+
+
 

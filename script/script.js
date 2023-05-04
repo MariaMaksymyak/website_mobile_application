@@ -23,7 +23,6 @@ myDiv.addEventListener("click", function() {
 });
 
 
-  
 
 
 
